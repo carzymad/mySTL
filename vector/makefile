@@ -1,11 +1,11 @@
 exe = run
-obj = main.o vector.o
-file = main.cpp
+obj = test.o vector.o
+file = test.cpp
 
 $(exe):$(obj)
 	g++ -o $(exe) $(obj)
-main.o:main.cpp
-	g++ -c main.cpp
+test.o:test.cpp
+	g++ -c test.cpp
 vector.o:vector.cpp vector.h
 	g++ -c vector.cpp
 clean:

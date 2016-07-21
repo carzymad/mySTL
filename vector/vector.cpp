@@ -1,5 +1,7 @@
 #include "vector.h"
 
+using namespace cjl;
+
 vector::vector(int length):
     realSize(0), maxSize(length)
 {
@@ -18,7 +20,7 @@ vector::vector(int data, int size):
     }
 }
 
-vector::vector(vector &tmp):
+vector::vector(const vector &tmp):
     maxSize(tmp.maxSize), realSize(tmp.realSize)
 {
     arry = new int[maxSize];
