@@ -1,6 +1,7 @@
 #include <iostream>
 #include "vector.h"
-#include <algorithm>
+//#include <algorithm>
+#include "../algorithm/algorithm.h"
 
 using namespace std;
 
